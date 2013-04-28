@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+    <persistence-unit name="transactions-optional">
+        <provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider>
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <!-- <property name="datanucleus.ConnectionURL" value="appengine"/> -->
+            <property name="datanucleus.ConnectionDriverName" value="com.google.appengine.api.rdbms.AppEngineDriver"/>
+            <property name="datanucleus.ConnectionURL" value="jdbc:google:rdbms://farmlendweb:farmlend/farmlend"/>
+            <property name="datanucleus.autoCreateSchema" value="true"/>
+            <!-- <property name="datanucleus.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="datanucleus.ConnectionURL" value="jdbc:mysql://farmlend.cmxahvj82ram.us-east-1.rds.amazonaws.com:3306/farmlend"/>
+            <property name="datanucleus.ConnectionUserName" value="columbia"/>
+            <property name="datanucleus.ConnectionPassword" value="13571113"/> -->
+        </properties>
+    </persistence-unit>
+</persistence>

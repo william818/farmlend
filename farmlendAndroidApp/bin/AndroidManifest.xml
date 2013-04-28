@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.columbia.farmlendevaluator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/farmlend"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.columbia.farmlendevaluator.RecommendationListActivity"
+            android:parentActivityName="edu.columbia.farmlendevaluator.MainActivity" >           
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.columbia.farmlendevaluator.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.RecommendationDetailActivity"
+            android:label="@string/title_recommendation_detail"
+            android:parentActivityName=".RecommendationListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RecommendationListActivity" />
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.QuestionListActivity"
+            android:label="@string/title_question_list"
+            android:parentActivityName="edu.columbia.farmlendevaluator.GeoSelector" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.columbia.farmlendevaluator.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.QuestionDetailActivity"
+            android:label="@string/title_question_detail"
+            android:parentActivityName=".QuestionListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QuestionListActivity" />
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.GeoSelector"
+            android:label="@string/title_activity_geo_selector"
+            android:parentActivityName="edu.columbia.farmlendevaluator.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.columbia.farmlendevaluator.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.columbia.farmlendevaluator.DisplayScoreActivity"
+            android:label="@string/title_activity_display_score"
+            android:parentActivityName="edu.columbia.farmlendevaluator.QuestionListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.columbia.farmlendevaluator.QuestionListActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,3 @@
+# Module farmlend3
+# RPC service class, partial path of RPC policy file
+edu.columbia.ieor.farmlend.client.GreetingService, 7ACE348F5B13B51D5677E501939215D0.gwt.rpc

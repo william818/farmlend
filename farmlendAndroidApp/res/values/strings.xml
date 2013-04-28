@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Farm Lender</string>
+    <string name="title_recommendation_detail">Recommendation Detail</string>
+    <string name="title_activity_main">FarmLend</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_question_list">Questions</string>
+    <string name="title_question_detail">Question Detail</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_geo_selector">Select Geography</string>
+    <string name="title_activity_display_score">DisplayScoreActivity</string>
+
+</resources>
